@@ -34,6 +34,16 @@ three layers are there to see. The sky (`#20325F` → `#7C6E9E` → `#F4B98C`), 
 (`#3A6FB8` → `#173F7E` → `#091A33`) belong to the emblem only. Below 64 px, and wherever a plain mark fits better,
 use the mark.
 
+The same scene, wide, carries the wordmark in the sky:
+
+| File | Use |
+|---|---|
+| `keelwing-banner.svg` | the landscape logo, 3:1: the top of a README and of the site |
+| `keelwing-social.svg`, `keelwing-social.png` | the link preview, 1280 × 640, with the tagline: the site's `og:image` and the repositories' social preview |
+| `keelwing-support.svg` | the Ko-fi button: a cup of the sea with the boat afloat in it |
+
+Their text is Archivo, outlined, so they look the same without the font, as GitHub shows them.
+
 ## Colours
 
 | Name | Hex | Use |

@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keelwing</title>
 <meta name="description" content="Open-source sessions, extensions and tools for Sailfish OS phones.">
+<meta property="og:title" content="Keelwing">
+<meta property="og:description" content="Open-source sessions, extensions and tools for Sailfish OS phones.">
+<meta property="og:url" content="https://keelwing.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://keelwing.github.io/brand/keelwing-social.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="brand/keelwing-mark-compact.svg" type="image/svg+xml">
 <style>
 :root {
@@ -40,15 +46,8 @@ body {
 }
 a { color: var(--link); }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
-header { padding: 56px 0 24px; display: flex; align-items: center; gap: 16px; }
-.wordmark {
-  font-family: Archivo, system-ui, sans-serif;
-  font-weight: 700;
-  font-stretch: 112%;
-  letter-spacing: -0.02em;
-  font-size: 40px;
-  line-height: 1;
-}
+header { padding: 40px 0 8px; }
+header img { display: block; width: 100%; height: auto; }
 .hero { padding: 24px 0 40px; }
 .hero h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.01em; }
 .hero p { color: var(--soft); max-width: 640px; margin: 0; }
@@ -67,6 +66,7 @@ h2 { font-size: 22px; margin: 0 0 16px; }
 .layer p { margin: 0; color: var(--soft); }
 .tag { font-family: ui-monospace, "IBM Plex Mono", Menlo, monospace; font-size: 14px; color: var(--soft); }
 footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--soft); font-size: 14px; }
+.support img { display: block; }
 @media (max-width: 560px) {
   .layer { grid-template-columns: 64px minmax(0, 1fr); padding: 16px; gap: 14px; }
   .layer svg { width: 64px; height: 64px; }
@@ -77,18 +77,7 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
 <div class="wrap">
 
 <header>
-  <svg viewBox="0 0 120 120" width="56" height="56" role="img" aria-label="Keelwing mark">
-    <path fill="var(--air)" d="M62 8V50H32Q48 34 62 8Z"/>
-    <path fill="var(--surface)" d="M16 56H104L98 68H22Z"/>
-    <g fill="var(--depth)">
-      <rect x="6" y="71" width="108" height="3" rx="1.5"/>
-      <path d="M23 77H97Q92 85 80 86H40Q28 85 23 77Z"/>
-      <path d="M50 85H63L59 104H50Z"/>
-      <path d="M41 103H66Q71 106.5 66 110H44Q37 106.5 41 103Z"/>
-      <path d="M86 86H93L91 97H87Z"/>
-    </g>
-  </svg>
-  <span class="wordmark">keelwing</span>
+  <img src="brand/keelwing-banner.svg" width="1500" height="500" alt="Keelwing">
 </header>
 
 <section class="hero">
@@ -159,7 +148,9 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
 </section>
 
 <footer>
-  <p><a href="https://github.com/Keelwing">github.com/Keelwing</a> · <a href="https://ko-fi.com/D31m05z">Support on Ko-fi</a></p>
+  <p><a class="support" href="https://ko-fi.com/D31m05z"><img src="brand/keelwing-support.svg" width="199" height="48"
+    alt="Support Keelwing on Ko-fi"></a></p>
+  <p><a href="https://github.com/Keelwing">github.com/Keelwing</a></p>
   <p>Sailfish OS and Jolla are trademarks of their owners; Keelwing is a community project, not made or endorsed by
   them.</p>
 </footer>
