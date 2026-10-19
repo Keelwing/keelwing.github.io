@@ -1,15 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
   <title>Keelwing</title>
-  <rect width="500" height="500" fill="#0E1B2A"/>
-  <g transform="translate(65 65) scale(3.0833)">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#20325F"/>
+      <stop offset="0.6" stop-color="#7C6E9E"/>
+      <stop offset="1" stop-color="#F4B98C"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A6FB8"/>
+      <stop offset="0.45" stop-color="#173F7E"/>
+      <stop offset="1" stop-color="#091A33"/>
+    </linearGradient>
+    <g id="fish">
+      <path d="M-16 0 Q-4 -10 12 -3 L22 -10 L19 0 L22 10 L12 3 Q-4 10 -16 0 Z"/>
+    </g>
+  </defs>
+  <rect width="500" height="500" fill="url(#sky)"/>
+  <circle cx="436" cy="286" r="38" fill="#FFD9A0" opacity="0.9"/>
+  <path d="M0 286Q31 278 62 286T125 286T187 286T250 286T312 286T375 286T437 286T500 286V500H0Z" fill="url(#sea)"/>
+  <path d="M404 300H468M414 314H458M424 328H448" stroke="#FFD9A0" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+  <path d="M0 286Q31 278 62 286T125 286T187 286T250 286T312 286T375 286T437 286T500 286" fill="none" stroke="#FFE9CC" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <g transform="translate(82 87) scale(2.8)">
     <path fill="#14A39A" d="M62 8V50H32Q48 34 62 8Z"/>
     <path fill="#3D8BFF" d="M16 56H104L98 68H22Z"/>
-    <g fill="#EEF3F8">
-      <rect x="6" y="71" width="108" height="3" rx="1.5"/>
+    <g fill="#0B1424">
       <path d="M23 77H97Q92 85 80 86H40Q28 85 23 77Z"/>
       <path d="M50 85H63L59 104H50Z"/>
       <path d="M41 103H66Q71 106.5 66 110H44Q37 106.5 41 103Z"/>
       <path d="M86 86H93L91 97H87Z"/>
     </g>
+  </g>
+  <g fill="#7FD8CC">
+    <use href="#fish" transform="translate(112 420) scale(1.15)"/>
+    <use href="#fish" transform="translate(150 448)"/>
+    <use href="#fish" transform="translate(96 462) scale(0.85)"/>
+  </g>
+  <g fill="#14A39A">
+    <use href="#fish" transform="translate(392 412) scale(-1 1)"/>
+    <use href="#fish" transform="translate(420 444) scale(-0.85 0.85)"/>
+  </g>
+  <g fill="none" stroke="#EEF3F8" stroke-width="2.5" opacity="0.6">
+    <circle cx="292" cy="372" r="5"/>
+    <circle cx="300" cy="352" r="3.5"/>
+    <circle cx="294" cy="336" r="2.5"/>
   </g>
 </svg>

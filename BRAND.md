@@ -21,10 +21,18 @@ A sailing boat from the side, cut by the waterline. Two cuts of it, in `site/bra
 |---|---|
 | `keelwing-mark.svg`, `keelwing-mark-dark.svg` | the full mark, from 64 px up; `-dark` for dark grounds |
 | `keelwing-mark-compact.svg`, `keelwing-mark-compact-dark.svg` | 48 px and below: a thicker waterline and a plain fin |
-| `keelwing-avatar.svg`, `keelwing-avatar.png` | the organization avatar, 500 × 500 |
+| `keelwing-avatar.svg`, `keelwing-avatar.png` | the organization avatar, 500 × 500: the emblem |
 
 On a dark ground the waterline and the keel turn Foam; the sail and the hull keep their colours. Keep clear space
 around the mark of at least the hull's height. Don't stretch it, recolour a layer, or add outlines and shadows.
+
+## The emblem
+
+The mark in its own scene, for the avatar and other large places: the boat at dusk, the sun going down behind
+it, a small school of fish under the water. The sail and the hull sit in the air, the keel under the water, so the
+three layers are there to see. The sky (`#20325F` → `#7C6E9E` → `#F4B98C`), the sun (`#FFD9A0`) and the sea
+(`#3A6FB8` → `#173F7E` → `#091A33`) belong to the emblem only. Below 64 px, and wherever a plain mark fits better,
+use the mark.
 
 ## Colours
 
