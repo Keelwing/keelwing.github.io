@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <title>Keelwing</title>
+  <path fill="#14A39A" d="M64 4V50H26Q48 30 64 4Z"/>
+  <path fill="#3D8BFF" d="M10 56H110L102 70H18Z"/>
+  <g fill="#0E1B2A">
+    <rect x="2" y="74" width="116" height="6" rx="3"/>
+    <path d="M18 84H102Q95 95 80 96H40Q25 95 18 84Z"/>
+    <path d="M47 95H66L61 116H47Z"/>
+  </g>
+</svg>
