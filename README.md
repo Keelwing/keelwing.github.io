@@ -4,7 +4,7 @@ Keelwing's website, https://keelwing.github.io, and the brand files.
 
 - `site/`: what GitHub Pages serves, as it is: `index.html` and `brand/`.
 - [BRAND.md](BRAND.md): the mark, the colours, the type and the layer marks, and how to use them.
-- [NAMING.md](NAMING.md): how repositories and packages are named (a proposal).
+- [NAMING.md](NAMING.md): how repositories and packages are named (decided 2026-10-19).
 
 ## Publishing
 
