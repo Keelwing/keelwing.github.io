@@ -51,5 +51,4 @@ readers:
 - **rootfs-internal file names:** files the overlay sync or the package writes into a rootfs. A rename there would
   leave both copies.
 
-New code uses the new names. Sailyard's rename is step 6 of
-[its migration](https://github.com/Keelwing/sailyard/blob/main/docs/MIGRATION.md).
+New code uses the new names.
