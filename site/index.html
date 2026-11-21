@@ -24,6 +24,7 @@
   --link: #1D5FD1;
   --depth: #0E1B2A;
   --muted: #C3CFDB;
+  --air-text: #0F6E63;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -35,6 +36,7 @@
     --link: #7FB2FF;
     --depth: #EEF3F8;
     --muted: #3A4E66;
+    --air-text: #14A39A;
   }
 }
 * { box-sizing: border-box; }
@@ -64,12 +66,16 @@ h2 { font-size: 22px; margin: 0 0 16px; }
 }
 .layer h3 { margin: 0 0 4px; font-size: 19px; }
 .layer p { margin: 0; color: var(--soft); }
+.layer .links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-weight: 600; }
 .tag { font-family: ui-monospace, "IBM Plex Mono", Menlo, monospace; font-size: 14px; color: var(--soft); }
+.layer h3 .tag { margin-left: 10px; font-weight: 500; white-space: nowrap; }
+.layer h3 .out { color: var(--air-text); }
 footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--soft); font-size: 14px; }
 .support img { display: block; }
 @media (max-width: 560px) {
   .layer { grid-template-columns: 64px minmax(0, 1fr); padding: 16px; gap: 14px; }
   .layer svg { width: 64px; height: 64px; }
+  .layer h3 .tag { display: block; margin: 2px 0 0; }
 }
 </style>
 </head>
@@ -83,7 +89,7 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
 <section class="hero">
   <h1>Open-source sessions, extensions and tools for Sailfish OS phones.</h1>
   <p>A sailing boat has three layers, and so do our projects. Each one runs on the phone you already have, next to
-  Sailfish OS, not instead of it. Early days: the projects open one by one.</p>
+  Sailfish OS, not instead of it. Seaglass is out; the others open one by one.</p>
 </section>
 
 <section class="layers" aria-labelledby="layers-title">
@@ -102,9 +108,12 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
       </g>
     </svg>
     <div>
-      <h3>Air: UI and UX</h3>
-      <p><strong>Seaglass</strong>: home screen extensions for the stock Sailfish OS UI: folders, glass, search,
-      badges, a richer task switcher, widgets.</p>
+      <h3>Air: UI and UX <span class="tag out">released</span></h3>
+      <p><strong>Seaglass</strong>: widgets, glass, app search, notification badges, a richer task switcher and app
+      animations for the stock Sailfish OS home screen.</p>
+      <p class="links"><a href="https://keelwing.github.io/seaglass/">Website</a>
+        <a href="https://github.com/Keelwing/seaglass/releases/latest">Download</a>
+        <a href="https://github.com/Keelwing/seaglass">Source</a></p>
     </div>
   </div>
 
@@ -121,7 +130,7 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
       </g>
     </svg>
     <div>
-      <h3>Surface: modules that glide</h3>
+      <h3>Surface: modules that glide <span class="tag">in the works</span></h3>
       <p><strong>Sailyard</strong>: a second session on a Sailfish OS phone, per user. Plasma Mobile and Plasma
       Desktop today, Phosh next.</p>
     </div>
@@ -140,7 +149,7 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
       </g>
     </svg>
     <div>
-      <h3>Depth: under the water</h3>
+      <h3>Depth: under the water <span class="tag">in the works</span></h3>
       <p>The runtime under the sessions: GPU, boot screen, the compositor hand-over. Tools for disk usage and
       monitoring come next.</p>
     </div>
@@ -148,6 +157,7 @@ footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--s
 </section>
 
 <footer>
+  <p>Everything here is free and stays free. If it helps you, a coffee on Ko-fi keeps the work going.</p>
   <p><a class="support" href="https://ko-fi.com/D31m05z"><img src="brand/keelwing-support.svg" width="199" height="48"
     alt="Support Keelwing on Ko-fi"></a></p>
   <p><a href="https://github.com/Keelwing">github.com/Keelwing</a></p>
